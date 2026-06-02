@@ -119,7 +119,7 @@ export default function Hero() {
             className="mt-8 max-w-3xl text-xl leading-relaxed text-white md:text-2xl"
             style={{ fontFamily: "Georgia, Times New Roman, serif", fontStyle: "italic" }}
           >
-            &quot;Code is like humor. When you have to explain it, it's bad. Fortunately, explaining things is one of my strengths."&quot;
+            &quot;Code is like humor. When you have to explain it, it's bad. Fortunately, explaining things is one of my strengths.&quot;
           </motion.p>
 
           <motion.div

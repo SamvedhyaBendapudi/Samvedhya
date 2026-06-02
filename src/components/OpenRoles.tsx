@@ -99,7 +99,7 @@ export default function OpenRoles() {
               Mission Select
             </span>
             <span className="pixel-border inline-flex bg-[var(--mario-dark)] px-4 py-2 text-[var(--mario-yellow)]">
-              Spring/Summer 2026
+              PLAYER STATUS: ACTIVE
             </span>
           </div>
 
@@ -107,7 +107,7 @@ export default function OpenRoles() {
             🎯 OPEN TO ROLES
           </h2>
           <p className="mx-auto mt-5 max-w-3xl text-sm font-bold uppercase tracking-[0.12em] text-[#F4F7FF] md:text-base">
-            Currently seeking full-time opportunities — Spring/Summer 2026
+            Currently seeking full-time opportunities 
           </p>
         </motion.div>
 

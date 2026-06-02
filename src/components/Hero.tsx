@@ -109,7 +109,7 @@ export default function Hero() {
             transition={{ duration: 0.55, delay: 0.18 }}
             className="mt-5 max-w-2xl text-lg font-bold uppercase tracking-[0.12em] text-white/95 md:text-xl"
           >
-            Leveling up software, data, and cloud systems with a bold retro edge.
+            Turning engineering challenges into completed quests.
           </motion.p>
 
           <motion.p
@@ -119,7 +119,7 @@ export default function Hero() {
             className="mt-8 max-w-3xl text-xl leading-relaxed text-white md:text-2xl"
             style={{ fontFamily: "Georgia, Times New Roman, serif", fontStyle: "italic" }}
           >
-            &quot;A delayed game is eventually good, but a rushed game is forever bad.&quot; — Shigeru Miyamoto
+            &quot;Code is like humor. When you have to explain it, it's bad. Fortunately, explaining things is one of my strengths."&quot;
           </motion.p>
 
           <motion.div

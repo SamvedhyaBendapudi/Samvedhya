@@ -30,6 +30,17 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Offset anchored sections so the fixed navbar doesn't cover headings */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
 ::selection {
   background: var(--mario-red);
   color: white;

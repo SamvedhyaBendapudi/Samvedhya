@@ -54,6 +54,8 @@ const initialForm: FormData = {
   message: "",
 };
 
+const CONTACT_EMAIL = "samvedhya.careers@gmail.com";
+
 function WarpPipe({ item, index }: { item: PipeItem; index: number }) {
   return (
     <motion.a
@@ -105,34 +107,34 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+
+    const name = formData.name.trim();
+    const email = formData.email.trim();
+    const message = formData.message.trim();
+
+    if (!name || !email || !message) {
+      setSubmitState("error");
+      setStatusMessage("Fill in your name, email, and message before sending.");
+      return;
+    }
+
     setSubmitState("submitting");
     setStatusMessage("Warping your message through the pipe...");
 
-    try {
-      const response = await fetch(event.currentTarget.action, {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+    const subject = `Portfolio message from ${name}`;
+    const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
+    const mailtoUrl = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
+      subject,
+    )}&body=${encodeURIComponent(body)}`;
 
-      if (!response.ok) {
-        throw new Error("Form submission failed.");
-      }
+    window.location.href = mailtoUrl;
 
-      setFormData(initialForm);
-      setSubmitState("success");
-      setStatusMessage("Message sent! Replace the Formspree placeholder with your real form ID anytime.");
-    } catch {
-      setSubmitState("error");
-      setStatusMessage(
-        "Message could not be sent. Update the Formspree placeholder with a real form ID and try again.",
-      );
-    }
+    setSubmitState("success");
+    setStatusMessage(
+      "Your email app should now be open with the message pre-filled — just hit send!",
+    );
   };
 
   return (
@@ -212,8 +214,6 @@ export default function Contact() {
               </div>
 
               <motion.form
-                action="https://formspree.io/f/placeholder"
-                method="POST"
                 onSubmit={handleSubmit}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -290,7 +290,7 @@ export default function Contact() {
                   </button>
 
                   <p className="text-xs font-black uppercase tracking-[0.16em] text-white/80">
-                    Replace <span className="text-[#FBD000]">placeholder</span> with your Formspree ID.
+                    Opens in your <span className="text-[#FBD000]">email app</span>, ready to send.
                   </p>
                 </div>
               </motion.form>

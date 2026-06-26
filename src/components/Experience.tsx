@@ -24,11 +24,11 @@ const experiences = [
     period: "09/2024 – Present",
     color: "#43B047",
     metrics: [
-      "100M+ genomic records integrated via Delta Lakehouse on AWS S3",
-      "10,000+ telemetry data points/minute processed in React dashboards",
+      "10K+ telemetry points/minute visualized in React + TypeScript dashboards",
+      "REST + Node.js services built to serve 100M+ genomic records via Delta Lakehouse on AWS S3",
+      "20+ zero-downtime deployments/day via Jenkins + Docker + Kubernetes (EKS)",
       "40% fewer merge conflicts after migrating 30+ devs to GitHub Enterprise",
-      "20+ zero-downtime deployments/day via Jenkins + Docker + K8s (EKS)",
-      "60% lower MTTR with CloudWatch, ELK, Prometheus, Grafana",
+      "60% lower MTTR with CloudWatch, ELK, Prometheus, Grafana observability",
     ],
   },
   {
@@ -39,11 +39,11 @@ const experiences = [
     period: "08/2022 – 08/2024",
     color: "#E52521",
     metrics: [
-      "1M+ records/week ingested via Python OAuth + REST API connectors",
+      "10 reusable React / Web Components shipped with Carbon design parity",
+      "Python OAuth + REST API connectors ingesting 1M+ records/week",
       "70% less manual handling with Azure Databricks medallion pipelines",
       "56 production repos migrated Bitbucket → GitHub Enterprise with GitOps",
-      "10 reusable React/Web Components shipped with Carbon design parity",
-      "165 independently versioned repos created from monolith refactor",
+      "165 independently versioned services from a monolith refactor",
     ],
   },
   {
@@ -54,9 +54,9 @@ const experiences = [
     period: "01/2022 – 08/2022",
     color: "#049CD8",
     metrics: [
-      "3 banking regions served by SQL ETL for financial transactions",
-      "3 core builders shipped: workflow editor, query builder, form designer",
-      "12% productivity gain from unified Jira, GitHub, Teams interface",
+      "3 full-stack builders shipped: workflow editor, query builder, form designer",
+      "SQL ETL serving financial transactions across 3 banking regions",
+      "12% productivity gain from a unified Jira + GitHub + Teams interface",
     ],
   },
   {
@@ -67,9 +67,9 @@ const experiences = [
     period: "01/2021 – 10/2021",
     color: "#FBD000",
     metrics: [
-      "30% faster deployments via automated Postman + Jenkins test pipelines",
-      "18K active users with 33-minute average engagement on E-Learning",
-      "1TB/day processed via AWS Lambda + Redshift + S3 ETL pipeline",
+      "Responsive E-Learning UI serving 18K active users at 33-min avg engagement",
+      "AWS Lambda + Redshift + S3 ETL pipeline processing 1TB/day",
+      "30% faster releases via automated Postman + Jenkins test pipelines",
     ],
   },
 ] as const;

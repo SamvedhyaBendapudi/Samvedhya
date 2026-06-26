@@ -3,10 +3,13 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+const projects = [
   { image: "/project-braintumor.jpg", title: "Brain Tumor Detection System", description: "Developed using VGG16 with TensorFlow achieving 99% accuracy through data augmentation. Built REST API with Flask/FastAPI, responsive React frontend, deployed with Gunicorn and caching.", tags: ["TensorFlow", "VGG16", "Flask", "FastAPI", "React"], color: "#E52521", github: "https://github.com/SamvedhyaBendapudi/Brain-tumor-detection" },
   { image: "/project-fitness.jpg", title: "Fitness Application", description: "Full-stack fitness application built with Rapid API integration, enabling users to explore exercises, view demonstrations, and track workout routines with a modern React frontend.", tags: ["React", "Rapid API", "JavaScript", "REST API"], color: "#43B047", github: "https://github.com/SamvedhyaBendapudi/fitness-app" },
   { image: "/project-encryption.svg", title: "Cloud Security - Encryption", description: "Published research paper in IJIRCCE on securely deploying files into cloud environments using Diffie-Hellman key exchange and AES Encryption algorithms.", tags: ["Cryptography", "Cloud Security", "AES", "Diffie-Hellman"], color: "#049CD8", github: "https://github.com/SamvedhyaBendapudi/Encrypting_Files" },
-    { image: null, title: "Healthcare Chatbot", description: "Building an AI-powered chatbot leveraging fine-tuned BERT and GPT-3.5 to provide context-aware responses to PCOS-related questions.", tags: ["BERT", "GPT-3.5", "NLP", "LLM"], color: "#FBD000", github: null },,
+  { image: null, title: "Healthcare Chatbot", description: "Architecting a hybrid NLP pipeline with fine-tuned BERT for intent routing and GPT-3.5 for context-grounded PCOS health responses via conversational chain prompting.", tags: ["BERT", "GPT-3.5", "NLP", "LLM" , "RAG"], color: "#FBD000", github: null },
+];
+
 const clouds = [
   { className: "top-12 left-[8%] h-10 w-20", delay: 0 },
   { className: "top-28 right-[12%] h-12 w-24", delay: 0.8 },

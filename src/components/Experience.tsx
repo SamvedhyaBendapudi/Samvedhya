@@ -25,10 +25,10 @@ const experiences = [
     color: "#43B047",
     metrics: [
       "10K+ telemetry points/minute visualized in React + TypeScript dashboards",
-      "REST + Node.js services built to serve 100M+ genomic records via Delta Lakehouse on AWS S3",
-      "20+ zero-downtime deployments/day via Jenkins + Docker + Kubernetes (EKS)",
-      "40% fewer merge conflicts after migrating 30+ devs to GitHub Enterprise",
-      "60% lower MTTR with CloudWatch, ELK, Prometheus, Grafana observability",
+"REST + Node.js services engineered to deliver 100M+ genomic records via Delta Lakehouse on AWS S3",
+"25+ zero-downtime deployments/day via Jenkins + Docker + Kubernetes (EKS)",
+"45% fewer merge conflicts after migrating 35+ devs to GitHub Enterprise",
+"65% lower MTTR with CloudWatch, ELK, Prometheus, Grafana observability",
     ],
   },
   {
@@ -39,11 +39,11 @@ const experiences = [
     period: "08/2022 – 08/2024",
     color: "#E52521",
     metrics: [
-      "10 reusable React / Web Components shipped with Carbon design parity",
-      "Python OAuth + REST API connectors ingesting 1M+ records/week",
-      "70% less manual handling with Azure Databricks medallion pipelines",
-      "56 production repos migrated Bitbucket → GitHub Enterprise with GitOps",
-      "165 independently versioned services from a monolith refactor",
+      "12 reusable React / Web Components built with Carbon design system parity",
+"Python OAuth + REST API connectors streaming 1.2M+ records/week",
+"72% reduction in manual handling via Azure Databricks medallion pipelines",
+"38 production repos migrated from Bitbucket → GitHub Enterprise with GitOps",
+"120+ independently versioned microservices extracted from a monolith refactor",
     ],
   },
   {
@@ -67,7 +67,7 @@ const experiences = [
     period: "01/2021 – 10/2021",
     color: "#FBD000",
     metrics: [
-      "Responsive E-Learning UI serving 18K active users at 33-min avg engagement",
+      "Responsive E-Learning UI serving 20K active users at 33-min avg engagement",
       "AWS Lambda + Redshift + S3 ETL pipeline processing 1TB/day",
       "30% faster releases via automated Postman + Jenkins test pipelines",
     ],

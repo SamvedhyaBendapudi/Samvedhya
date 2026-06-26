@@ -109,7 +109,7 @@ export default function Hero() {
             transition={{ duration: 0.55, delay: 0.18 }}
             className="mt-5 max-w-2xl text-lg font-bold uppercase tracking-[0.12em] text-white/95 md:text-xl"
           >
-            Turning engineering challenges into completed quests.
+            Leveling up software, data, and cloud systems with a bold retro edge.
           </motion.p>
 
           <motion.p
@@ -119,7 +119,7 @@ export default function Hero() {
             className="mt-8 max-w-3xl text-xl leading-relaxed text-white md:text-2xl"
             style={{ fontFamily: "Georgia, Times New Roman, serif", fontStyle: "italic" }}
           >
-            &quot;Code is like humor. When you have to explain it, it's bad. Fortunately, explaining things is one of my strengths.&quot;
+            &quot;A delayed game is eventually good, but a rushed game is forever bad.&quot; — Shigeru Miyamoto
           </motion.p>
 
           <motion.div
@@ -129,7 +129,7 @@ export default function Hero() {
             className="mt-10 flex flex-col items-start gap-4 sm:flex-row sm:flex-wrap"
           >
             <a
-              href="mailto:samvedhya.careers@gmail.com"
+              href="#contact"
               className="question-block inline-flex min-h-14 items-center justify-center px-7 py-3 text-base font-black uppercase tracking-[0.16em] text-[var(--mario-ground)] transition-transform duration-200 hover:-translate-y-1"
             >
               Get in Touch
